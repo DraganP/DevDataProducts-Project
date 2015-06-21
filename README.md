@@ -17,7 +17,7 @@ I converted transmission type and number of cylinders into factor variables, and
         cyl8         -6.0791     1.6837  -3.611  0.00123 ** 
         wt           -3.1496     0.9080  -3.469  0.00177 ** 
     
-My app lets the user select the transmission type (Auto/Man) and number of engine cylinders (4/6/8), both via radio          buttons. It also lets the user select the weight of the vehicle using a slider, between 1,500 lbs and 5,500 lbs (the lightest and the heaviest vehicles in the mtcars dataset) in 100 lb increments, and converted to 1,000s of lbs to match the wt coefficient in the dataset. Depending on the combination of the two factor variables I calculated the intercept and then used simple linear regression, where calculated intercept is "a" and weight coefficient is "b".
+My app lets the user select the transmission type (Auto/Man) and number of engine cylinders (4/6/8), both via radio          buttons. It also lets the user select the weight of the vehicle using a slider, between 1,500 lbs and 5,500 lbs (the lightest and the heaviest vehicles in the mtcars dataset) in 100 lb increments, converted to 1,000s of lbs to match the wt coefficient in the dataset. Depending on the combination of the two factor variables I calculated the intercept and then used simple linear regression, where calculated intercept is "a" and weight coefficient is "b".
     
     Predicted MPG = a + b * weight (1)
     
