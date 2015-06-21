@@ -5,7 +5,9 @@ Course project for Coursera Developing Data Products class
 For the purpose of creating a simple interactive app, I decided to use the mtcars dataset and predict MPG (miles per gallon) as a function of several variables. To make this simpler, I didn't use the best model from the Regression Models class, but decided to use just three variables: weight of the vehicle, type of transmission (Auto/Man) and number of engine cylinders (4/6/8).
     
 I converted transmission type and number of cylinders into factor variables, and ran the following model:
+    
     simpleModel <- lm(mpg ~ am + cyl + wt, mtcars)
+    
     summary(simpleModel) gives the coefficients:
     
                         Estimate Std. Error t value Pr(>|t|)    
